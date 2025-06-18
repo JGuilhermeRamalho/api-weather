@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: weather
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/weather_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+
+  jackson:
+    time-zone: America/Sao_Paulo
+
+weather:
+  api:
+    key: ea18afb3d38c9b2bf842ca6a0d53cda6
